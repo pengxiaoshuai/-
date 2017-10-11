@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/message_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp10">
+
+            <TextView
+                style="@style/text_14sp_black"
+                android:layout_marginBottom="@dimen/dp3"
+                android:text="3073.20"
+                android:textColor="@color/them_color"
+                android:textSize="@dimen/sp24" />
+
+            <TextView
+                style="@style/text_14sp_black"
+                android:layout_marginTop="@dimen/dp3"
+                android:text="本月电费(元)"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp10">
+
+                <TextView
+                    style="@style/text_14sp_black"
+                    android:text="本月电量(kwh):"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    style="@style/text_14sp_black"
+                    android:layout_width="0dp"
+                    android:layout_marginBottom="@dimen/dp3"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="6383.00"
+                    android:textColor="@color/them_color"
+                    android:textSize="@dimen/sp24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp10">
+
+                <TextView
+                    style="@style/text_14sp_black"
+                    android:text="上月电量(kwh):"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    style="@style/text_14sp_black"
+                    android:layout_width="0dp"
+                    android:layout_marginBottom="@dimen/dp3"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="5970.00"
+                    android:textColor="@color/them_color"
+                    android:textSize="@dimen/sp24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp10">
+
+                <TextView
+                    style="@style/text_14sp_black"
+                    android:text="今年电量(kwh):"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    style="@style/text_14sp_black"
+                    android:layout_width="0dp"
+                    android:layout_marginBottom="@dimen/dp3"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="38933.98"
+                    android:textColor="@color/them_color"
+                    android:textSize="@dimen/sp24" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.xms.widget.PagerSlidingTabStrip
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"/>
+
+    <com.xms.widget.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

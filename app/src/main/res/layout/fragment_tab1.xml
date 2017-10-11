@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v4.widget.DrawerLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/drawer_layout"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/activity_zy_message_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/activity_zy_message_linlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp5"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <View style="@style/style_line_horizontal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout><!--<LinearLayout--><!--android:orientation="vertical"--><!--android:id="@+id/left_drawer"--><!--android:layout_width="240dp"--><!--android:layout_height="match_parent"--><!--android:layout_gravity="start"--><!--android:choiceMode="singleChoice"--><!--android:divider="@android:color/transparent"--><!--android:dividerHeight="0dp"--><!--android:background="@mipmap/left"/>--><!--</android.support.v4.widget.DrawerLayout>-->

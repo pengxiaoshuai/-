@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/message_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_layout_title" />
+
+    <LinearLayout
+        android:id="@+id/message_lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.xms.widget.RoundImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/activity_my_message_topimg"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_margin="@dimen/dp10"
+            android:src="@mipmap/banner1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp3"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/message_myname"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    style="@style/text_14sp_black"
+                    android:text="彭其煊"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/select"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="售"
+                    android:background="@drawable/rondtype"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/message_myworkname"
+                style="@style/text_14sp_black"
+                android:layout_marginTop="@dimen/dp3"
+                android:text="江西百电信息产业有限公司"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/activity_my_message_dl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14sp_black"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="本月已用电量"
+                android:textColor="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/rondimgmessage"
+                    android:padding="@dimen/dp5"
+                    android:src="@mipmap/grzx01" />
+
+                <TextView
+                    android:id="@+id/message_left"
+                    style="@style/text_14sp_black"
+                    android:text="0.00"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    style="@style/text_14sp_black"
+                    android:text=" kwh"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/style_line_vertical1" />
+
+        <LinearLayout
+            android:id="@+id/activity_my_message_df"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14sp_black"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="本月已产生电费"
+                android:textColor="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/rondimgmessage"
+                    android:padding="@dimen/dp5"
+                    android:src="@mipmap/grzx02" />
+
+                <TextView
+                    android:id="@+id/message_right"
+                    style="@style/text_14sp_black"
+                    android:text="0.00"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    style="@style/text_14sp_black"
+                    android:text=" 元"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal" />
+
+    <View
+        style="@style/style_line_horizontal"
+        android:layout_marginTop="@dimen/dp10" />
+
+    <LinearLayout
+        android:id="@+id/activity_my_message_bxgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lin_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/rondimgmessage"
+            android:padding="@dimen/dp5"
+            android:src="@mipmap/grzx03" />
+
+        <TextView
+            style="@style/text_14sp_black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="报修管理"
+            android:textSize="@dimen/sp16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@mipmap/right_right" />
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/activity_my_message_xtsz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lin_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/rondimgmessage"
+            android:padding="@dimen/dp5"
+            android:src="@mipmap/grzx04" />
+
+        <TextView
+            style="@style/text_14sp_black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="系统设置"
+            android:textSize="@dimen/sp16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@mipmap/right_right" />
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/activity_my_message_kfzx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lin_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/rondimgmessage"
+            android:padding="@dimen/dp5"
+            android:src="@mipmap/grzx05" />
+
+        <TextView
+            style="@style/text_14sp_black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="联系我们"
+            android:textSize="@dimen/sp16" />
+
+        <ImageView
+            android:id="@+id/fragment_khgzt_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp15"
+            android:src="@mipmap/right_right" />
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal" />
+</LinearLayout>

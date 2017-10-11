@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/message_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.xms.ui.activity.BxdActivity">
+    <include layout="@layout/common_layout_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text16black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="标    题"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:text="智慧网关无故告警"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp7"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp7"
+                android:layout_weight="1"
+                android:text="故障时间"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:text="2017-03-05 16:33"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp7"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp7"
+                android:layout_weight="1"
+                android:text="联  系  人"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:text="韦洪铭"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp7"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp7"
+                android:layout_weight="1"
+                android:text="联系方式"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:text="15779160456"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1"
+                android:text="故障描述"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/message"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/dp10"
+                android:text="智慧网关无故告警智慧网关无故告警"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp7"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp7"
+                android:layout_weight="1"
+                android:text="答复内容"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:singleLine="true"
+                android:text="智慧网关无故告警智慧网关无故告警"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp7"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp7"
+                android:layout_weight="1"
+                android:text="回复"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/fh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:text="回复内容"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingTop="@dimen/dp12"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="删除此单"
+                android:textColor="@color/them_color"
+                android:textSize="@dimen/sp18"
+                android:background="@drawable/lin_selector"/>
+            <View style="@style/vertical_line" />
+
+            <TextView
+                android:id="@+id/goback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="返回列表"
+                android:background="@drawable/lin_selector"
+                android:textColor="@color/them_color"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line" />
+    </LinearLayout>
+</LinearLayout>

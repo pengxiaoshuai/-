@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item  android:state_pressed="true">
+                <shape >
+                        <!--内部填充的颜色-->
+                        <solid android:color="@color/choice_image_bg"/>
+                        <!--设置周边四个角的圆角-->
+                        <corners android:topLeftRadius="@dimen/dp10"
+                            android:topRightRadius="@dimen/dp10"
+                            android:bottomLeftRadius="@dimen/dp10"
+                            android:bottomRightRadius="@dimen/dp10"/>
+                        <!--宽度为1dp，红色的最外层分割线-->
+                        <!--<stroke android:width="@dimen/dp1" android:color="@color/red"/>-->
+                </shape>
+        </item>
+        <item  android:state_pressed="false">
+                <shape ><!--内部填充的颜色-->
+                        <solid android:color="@color/them_color"/>
+                        <!--设置周边四个角的圆角-->
+                        <corners android:topLeftRadius="@dimen/dp10"
+                            android:topRightRadius="@dimen/dp10"
+                            android:bottomLeftRadius="@dimen/dp10"
+                            android:bottomRightRadius="@dimen/dp10"/>
+                        <!--宽度为1dp，红色的最外层分割线-->
+                        <!--<stroke android:width="@dimen/dp1" android:color="@color/red"/>-->
+                </shape>
+        </item>
+</selector>

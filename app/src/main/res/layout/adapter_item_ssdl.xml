@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/adapter_item_ssdl_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="莫奈一号变"
+        android:background="@color/them_color"
+        android:padding="@dimen/dp8"
+        android:textSize="@dimen/sp18"
+        android:textColor="@color/white"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechart"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

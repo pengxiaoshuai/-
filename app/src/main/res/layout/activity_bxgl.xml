@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/message_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.xms.ui.activity.BxglActivity">
+
+    <LinearLayout
+        android:id="@+id/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/them_color"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/title_height"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginRight="22dp"
+            android:id="@+id/common_title_left"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/image_left"
+            android:clickable="true"
+            android:src="@mipmap/back0" />
+
+        <TextView
+            android:id="@+id/common_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/color_white"
+            android:background="@drawable/image_left"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:id="@+id/common_title_right"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14"
+            android:background="@drawable/image_left"
+            android:text="报修记录" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bxgl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lin_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.xms.widget.RoundImageView
+            android:id="@+id/bxgl_imgae"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_margin="@dimen/dp10"
+            android:src="@mipmap/tx" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bxgl_name"
+                style="@style/text_14sp_black"
+                android:layout_marginBottom="@dimen/dp3"
+                android:text="江西丰锦电力科技有限公司"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bxgl_workname"
+                style="@style/text_14sp_black"
+                android:layout_marginTop="@dimen/dp3"
+                android:text="地址：江西南昌红谷滩新区899号"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/style_line_horizontal"
+            android:layout_width="@dimen/dp70"
+            android:background="@color/them_color" />
+
+        <TextView
+            style="@style/text_14sp_black"
+            android:layout_margin="@dimen/dp10"
+            android:text="故障上报表单"
+            android:textColor="@color/them_color" />
+
+        <View
+            style="@style/style_line_horizontal"
+            android:layout_width="@dimen/dp70"
+            android:background="@color/them_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            style="@style/text_14sp_black"
+            android:text="故障标题:"
+            android:textSize="@dimen/sp16" />
+
+        <EditText
+            android:id="@+id/title"
+            style="@style/text_14sp_black"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:singleLine="true"
+            android:hint="请输入故障标题"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <View
+        style="@style/style_line_horizontal"
+        android:layout_marginLeft="@dimen/dp10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            style="@style/text_14sp_black"
+            android:text="发生时间:"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/text_14sp_black"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="请选择发生时间"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <View
+        style="@style/style_line_horizontal"
+        android:layout_marginLeft="@dimen/dp10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            style="@style/text_14sp_black"
+            android:text="联系方式:"
+            android:textSize="@dimen/sp16" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:singleLine="true"
+            style="@style/text_14sp_black"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="如未填写，将默认为注册手机"
+            android:numeric="integer"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <View
+        style="@style/style_line_horizontal"
+        android:layout_marginLeft="@dimen/dp10" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请简单描述故障情况..."
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/sp16" />
+
+    <View
+        style="@style/style_line_horizontal"
+        android:layout_marginLeft="@dimen/dp10" />
+
+    <TextView
+        android:id="@+id/act_login_login"
+        style="@style/logon_btn"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:text="确认提交" />
+</LinearLayout>

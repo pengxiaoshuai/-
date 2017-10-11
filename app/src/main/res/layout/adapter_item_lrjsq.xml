@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/white"
+            android:paddingTop="@dimen/dp5"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/adapter_item_lrjsq_left"
+                android:text="预测用电量:"
+                style="@style/text_14sp_black"
+                android:textSize="@dimen/sp16"/>
+            <EditText
+                android:id="@+id/adapter_item_lrjsq_edit"
+                android:digits="@string/mdouble"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@color/white"
+                android:padding="@dimen/dp5"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textCursorDrawable="@drawable/cursor_color"
+                style="@style/text_14sp_black"
+                android:textSize="@dimen/sp14"/>
+            <TextView
+                android:id="@+id/adapter_item_lrjsq_right"
+                android:text="万千瓦时"
+                android:textColor="@color/them_color"
+                style="@style/text_14sp_black"
+                android:textSize="@dimen/sp14"/>
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="@dimen/dp10"
+            style="@style/style_line_horizontal"/>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.xms.ui.activity.XtszActivity">
+
+    <include layout="@layout/common_layout_title" />
+
+    <LinearLayout
+        android:id="@+id/message_lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lin_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.xms.widget.RoundImageView
+            android:id="@+id/mimage"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_margin="@dimen/dp10"
+            android:src="@mipmap/tx" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/text_14sp_black"
+                android:layout_marginBottom="@dimen/dp3"
+                android:text="江西丰锦电力科技有限公司"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/workname"
+                style="@style/text_14sp_black"
+                android:layout_marginTop="@dimen/dp3"
+                android:text="地址：江西南昌红谷滩新区899号"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal" />
+
+    <com.xms.widget.PagerSlidingTabStrip
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+</LinearLayout>

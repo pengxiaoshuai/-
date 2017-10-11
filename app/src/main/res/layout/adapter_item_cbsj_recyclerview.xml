@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View style="@style/style_line_horizontal3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <View style="@style/style_line_vertical2"/>
+        <TextView
+            android:id="@+id/adapter_cbsj_text1"
+            android:text="抄表时间"
+            style="@style/style_billing_text"
+            android:layout_weight="1.5"/>
+
+        <View style="@style/style_line_vertical2"/>
+
+        <TextView
+            android:id="@+id/adapter_cbsj_text2"
+            style="@style/style_billing_text"
+            android:layout_weight="1.5"
+            android:text="电度数(kwh)" />
+
+        <View style="@style/style_line_vertical2"/>
+
+        <TextView
+            android:id="@+id/adapter_cbsj_text3"
+            style="@style/style_billing_text"
+            android:layout_weight="1.5"
+            android:text="频率(hz)" />
+
+        <View style="@style/style_line_vertical2"/>
+    </LinearLayout>
+
+</LinearLayout>

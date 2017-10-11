@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/message_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.xms.ui.activity.SsdlActivity">
+
+    <include layout="@layout/common_layout_title" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/message_lin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--<com.xms.widget.RoundImageView-->
+                <!--android:id="@+id/roundImageView"-->
+                <!--android:layout_width="@dimen/dp60"-->
+                <!--android:layout_height="@dimen/dp60"-->
+                <!--android:layout_margin="@dimen/dp15"-->
+                <!--android:src="@mipmap/tx" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp3"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_ssdl_name"
+                            style="@style/text_14sp_black"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="江西丰锦电力科技有限公司"
+                            android:textSize="@dimen/sp16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:background="@drawable/rondtype"
+                            android:gravity="center"
+                            android:text="售"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp15"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ssdl_year"
+                            style="@style/text_14sp_black"
+                            android:text="2017"
+                            android:textColor="@color/them_color"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+
+                            style="@style/text_14sp_black"
+                            android:text=" 年 "
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@+id/ssdl_month"
+                            style="@style/text_14sp_black"
+                            android:text="7"
+                            android:textColor="@color/them_color"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            style="@style/text_14sp_black"
+                            android:text=" 月 "
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            android:id="@+id/ssdl_day"
+                            style="@style/text_14sp_black"
+                            android:text="8"
+                            android:textColor="@color/them_color"
+                            android:textSize="@dimen/sp16" />
+
+                        <TextView
+                            style="@style/text_14sp_black"
+                            android:text=" 日实时电量监测"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/lin_selector"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_14sp_black"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:text="日累计电量"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp8"
+                            android:background="@drawable/rondimgmessage"
+                            android:padding="@dimen/dp5"
+                            android:src="@mipmap/grzx01" />
+
+                        <TextView
+                            android:id="@+id/ljdl1"
+                            style="@style/text_14sp_black"
+                            android:text="17848"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/sp16" />
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/textView2"-->
+                        <!--style="@style/text_14sp_black"-->
+                        <!--android:text=" kwh"-->
+                        <!--android:textColor="@color/gray"-->
+                        <!--android:textSize="@dimen/sp16" />-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/lin_selector"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_14sp_black"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:text="月累计电量"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/sp16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp8"
+                            android:background="@drawable/rondimgmessage"
+                            android:padding="@dimen/dp5"
+                            android:src="@mipmap/grzx01" />
+
+                        <TextView
+                            android:id="@+id/ljdl2"
+                            style="@style/text_14sp_black"
+                            android:text="83968"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/sp16" />
+
+                        <!--<TextView-->
+                        <!--android:textSize="@dimen/sp16"-->
+                        <!--style="@style/text_14sp_black"-->
+                        <!--android:text=" kwh"-->
+                        <!--android:textColor="@color/gray" />-->
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/style_NformationInput_LinearLayout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="选择时间:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mtime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_edit_background_gray"
+                    android:hint="请选择日期"
+                    android:numeric="integer"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="2017-07"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/activity_ssdl_cx"
+                    style="@style/text_14sp_black"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:background="@drawable/shape_select_them"
+                    android:paddingBottom="@dimen/dp7"
+                    android:paddingLeft="@dimen/dp12"
+                    android:paddingRight="@dimen/dp12"
+                    android:paddingTop="@dimen/dp7"
+                    android:text="查询"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginTop="10dp" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ssdl_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
